@@ -1,0 +1,339 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  font-size: 16px;
+  line-height: 1;
+}
+
+body {
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #E5E5E5;
+  min-height: 100vh;
+}
+
+.navbar {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 3px 8px rgba(153, 166, 191, 0.12);
+          box-shadow: 0px 3px 8px rgba(153, 166, 191, 0.12);
+}
+
+#next {
+  width: 211.18px;
+  height: 28.16px;
+  background: #724BF2;
+  border-radius: 8.89167px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8.89167px;
+  line-height: 11px;
+  text-align: center;
+  border: none;
+  color: #FFFFFF;
+}
+
+.dropbtn {
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.left-nav {
+  height: 100%;
+  background: #FFFFFF;
+}
+
+.left-nav .eth_btn {
+  margin: 20px 0;
+  width: 171.91px;
+  height: 51.87px;
+  background: #784FFE;
+  border: none;
+  border-radius: 5.92778px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11.8556px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+
+.left-nav .btn_category {
+  width: 171.91px;
+  height: 40.01px;
+  background: rgba(120, 79, 254, 0.12);
+  border: none;
+  border-radius: 5.92778px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11.8556px;
+  line-height: 14px;
+  color: #784FFE;
+}
+
+.left-nav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.left-nav li img {
+  width: 18px;
+}
+
+.left-nav li a {
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11.8556px;
+  line-height: 14px;
+  color: #2C384F;
+}
+
+.c-btn {
+  padding: 0;
+}
+
+.send {
+  width: 69.65px;
+  height: 28.16px;
+  background: #724BF2;
+  border: none;
+  border-radius: 8.89167px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8.89167px;
+  line-height: 11px;
+  color: #FFFFFF;
+}
+
+.bui {
+  width: 69.65px;
+  height: 28.16px;
+  background: #ECE6FF;
+  border: none;
+  border-radius: 8.89167px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8.89167px;
+  line-height: 11px;
+  color: #2C384F;
+}
+
+.chart2 {
+  width: 90.77px;
+  height: 43.35px;
+  display: inline-block;
+  float: right;
+}
+
+.list-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list-user .user_price {
+  padding: 10px 15px;
+  background: rgba(99, 52, 254, 0.12);
+  border-radius: 4.44583px;
+  color: #724BF2;
+}
+
+.main-btn {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-btn button {
+  width: 91.88px;
+  height: 28.16px;
+  background: #724BF2;
+  border: none;
+  border-radius: 8.89167px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8.89167px;
+  line-height: 11px;
+  color: #FFFFFF;
+}
+
+.card {
+  border-radius: 5.92778px;
+}
+
+.card span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11.8556px;
+  line-height: 14px;
+  color: #899BBE;
+}
+
+.card p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26.675px;
+  line-height: 32px;
+  /* identical to box height */
+  color: #2C384F;
+}
+
+.container-cards {
+  max-width: 337px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container-cards .wrapper {
+  max-height: 480px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px 10px 30px 15px;
+  overflow: scroll;
+}
+
+.container-cards .wrapper__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.container-cards .wrapper__header img {
+  width: 35px;
+  height: auto;
+}
+
+.container-cards .wrapper__header .header__title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.container-cards .wrapper .coins {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 15px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container-cards .wrapper .coins .coin__img {
+  width: 40px;
+  height: 40px;
+  background: red;
+  border-radius: 50%;
+}
+
+.container-cards .wrapper .coins .coins__name {
+  margin-left: 14px;
+}
+
+.container-cards .wrapper .coins .coins__name h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2C384F;
+}
+
+.container-cards .wrapper .coins .coins__name p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #899BBE;
+  margin-top: 6px;
+}
+
+.container-cards .wrapper .coins img {
+  width: 40px;
+  height: 40px;
+}

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style-dist.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light  header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo%20(2).svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                Zapper
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="dropdown  " >
+                    <ul class="navbar-nav mx-5  mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a  class=" dropbtn nav-link active nav-btn " aria-current="page" href="#" data-toggle="false" >
+                                <img onclick="myFunction()" class="dropbtn" src="images/burger.svg">
+                            </a>
+                        </li>
+                    </ul>
+                    <div id="myDropdown" class="dropdown-content">
+                        <div class="left-nav" >
+                            <div class="container">
+                                <div class="btn-group">
+                                    <button class="btn eth_btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown"
+                                            aria-expanded="false">
+                                        <img src="images/Ethereum.png" class="me-3">
+                                        Ethereum
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        ...
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn_category btn-primary btn-lg">
+                                    <img src="images/category.svg" class="me-3">
+                                    Dashboard
+                                </button>
+                                <ul>
+                                    <li>
+                                        <img src="images/Group.png" alt="logo" class="me-2">
+                                        <a href="#">Exchange</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/send-2.png" alt="logo" class="me-3">
+                                        <a href="#">Pool</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/farm.png" alt="logo" class="me-3">
+                                        <a href="#">Farm</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/note-2.png" alt="logo" class="me-3">
+                                        <a href="#">Bridge</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/stickynote.png" alt="logo" class="me-3">
+                                        <a href="#">History</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/setting.png" alt="logo" class="me-3">
+                                        <a href="#">Settings</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="d-flex me-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search token, value"
+                           aria-label="Search">
+                </form>
+
+                <div class="mr-sm-2">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="row ">
+                                <div class="col-xl-4 col-sm-2">
+                                    <img src="images/flag.svg">
+                                </div>
+                                <div class="col-4 col-sm-2 ">
+                                    USD
+                                </div>
+                                <div class="col-xl-4  col-sm-2">
+                                    <a href="#">
+                                        <img src="images/dropDown.svg" alt="#">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <a href="#">
+                                <img src="images/notification.svg">
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-6 col-sm-2">
+                                    <a>
+                                        <img src="images/avatar.svg">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-sm-2">
+                                    <a href="#">
+                                        <img src="images/dropDown.svg" alt="#">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+</header>
+    <div class="main-block container-fluid mt-3">
+        <div class="row mb-3" >
+            <div class="col"><h3>Overview</h3></div>
+            <div class="col-2 main-btn">
+                <button>
+                    <img src="images/customize.svg">
+                    Customize
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="card p-2">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card-body">
+                                <span>Net Worth</span>
+                                <p id="net"></p>
+                                <div class="row">
+                                    <div class="col c-btn"><button class="send">
+                                        <img src="images/send.svg">
+                                        Send</button>
+                                    </div>
+                                    <div class="col c-btn"><button class="bui">
+                                        <img src="images/plus.svg">
+                                        Buy</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <div class="chart">
+                                <canvas id="myChart" width="155px" height="70px"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card p-2">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card-body">
+                                <span>Income</span>
+                                <p id="income"></p>
+                                <div class="chart2 ">
+                                    <canvas id="myChart2" width="155px" height="70px"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card p-2">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card-body">
+                                <span>Expenses</span>
+                                <p id="expenses"></p>
+                                <div class="chart2 justify-content-end">
+                                    <canvas id="myChart3" width="155px" height="70px"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="row mt-3">
+                <div class="col-9">
+                    <div class="card p-3">
+                        <div class="row">
+                            <div class="col p-3 ">
+                                <img src="images/Group%2024.png">
+                                Portfolio Performance
+                            </div>
+                            <div class="col-2">
+                                <div class="dropdown">
+                                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                                        Monthly
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="chart4 justify-content-end">
+                                    <canvas id="myChart4" width="155px" height="70px"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="container-cards">
+                        <div class="wrapper">
+                            <div class="wrapper__header">
+                                <img src="./images/Group%2027.svg" alt="logo">
+                                <h2 class="header__title">All Assets</h2>
+                            </div>
+                        </div>
+                        <button id="next">View All</button>
+                    </div>
+                </div>
+                <div class="col-9 mt-3">
+                    <div class="card p-3">
+                        <div class="row">
+                            <div class="col p-3 ">
+                                <img src="images/Group%2024.png">
+                                Transactions
+                            </div>
+                            <div class="col-2">
+                                <div class="dropdown">
+                                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-expanded="false">
+                                        Monthly
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item list-user">
+                                                <img src="images/avatar1.png">
+                                                William
+                                                <div class="d-inline-block user_price">
+                                                    43,90 Ethereum
+                                                </div>
+                                                <div class="d-inline-block">
+                                                    Sun 12 May, 6:19 PM
+                                                </div>
+                                                <div class="d-inline-block">
+                                                    <a href="#">
+                                                        <img src="images/edit.svg">
+                                                    </a>
+                                                </div>
+                                                <div class="d-inline-block">
+                                                    <a href="#">
+                                                        <img src="images/trash.svg">
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item list-user">
+                                                <img src="images/avatar2.png">
+                                                Samuel
+                                                <div class="d-inline-block user_price">
+                                                    12,90 Ethereum
+                                                </div>
+                                                <div class="d-inline-block">
+                                                    Sun 12 May, 6:19 PM
+                                                </div>
+                                                <div class="d-inline-block">
+                                                    <a href="#">
+                                                        <img src="images/edit.svg">
+                                                    </a>
+                                                </div>
+                                                <div class="d-inline-block">
+                                                    <a href="#">
+                                                        <img src="images/trash.svg">
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="./node_modules/chart.js/dist/chart.js"></script>
+<script src="./index.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
